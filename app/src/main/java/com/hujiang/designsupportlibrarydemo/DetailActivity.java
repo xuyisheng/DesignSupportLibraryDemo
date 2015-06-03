@@ -5,6 +5,8 @@ import android.support.design.widget.CollapsingToolbarLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.widget.ImageView;
 
+import com.bumptech.glide.Glide;
+
 public class DetailActivity extends AppCompatActivity {
 
     @Override
@@ -16,7 +18,7 @@ public class DetailActivity extends AppCompatActivity {
                 (CollapsingToolbarLayout) findViewById(R.id.collapsing_toolbar);
         collapsingToolbar.setTitle("ABSBCS");
 
-        ImageView imageView = (ImageView) findViewById(R.id.backdrop);
-        imageView.setImageResource(R.mipmap.ic_launcher);
+        final ImageView imageView = (ImageView) findViewById(R.id.backdrop);
+        Glide.with(this).load(R.drawable.cheese_3).centerCrop().into(imageView);
     }
 }

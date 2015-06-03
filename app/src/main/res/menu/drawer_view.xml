@@ -21,13 +21,13 @@
             android:title="Big HJ"/>
     </group>
 
-    <item android:title="Sub items">
+    <item android:title="Version">
         <menu>
             <item
                 android:icon="@drawable/ic_dashboard"
                 android:title="Android"/>
             <item
-                android:icon="@drawable/ic_forum"
+                android:icon="@drawable/ic_dashboard"
                 android:title="iOS"/>
         </menu>
     </item>

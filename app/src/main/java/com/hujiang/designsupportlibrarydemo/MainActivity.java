@@ -1,5 +1,6 @@
 package com.hujiang.designsupportlibrarydemo;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
@@ -51,6 +52,9 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Snackbar comes out", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+
+                // TODO
+                startActivity(new Intent(MainActivity.this, DetailActivity.class));
             }
         });
 

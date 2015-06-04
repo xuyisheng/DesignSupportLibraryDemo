@@ -12,6 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
+        android:layout_marginBottom="16dp"
         android:paddingLeft="12dp"
         android:paddingRight="12dp"
         android:paddingTop="14dp">
@@ -22,7 +23,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="12dp"
             android:singleLine="true"
-            android:text="title"/>
+            android:text="五分钟学会英语语调"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -41,7 +42,7 @@
                     android:id="@+id/row_iv"
                     android:layout_width="140dp"
                     android:layout_height="94dp"
-                    android:src="@drawable/ic_dashboard"/>
+                    android:src="@drawable/ic_class_icon"/>
 
                 <ImageView
                     android:id="@+id/row_red_dot_is_had_opened"
@@ -49,26 +50,8 @@
                     android:layout_height="14dp"
                     android:layout_alignParentRight="true"
                     android:layout_marginTop="1dp"
-                    android:src="@drawable/ic_dashboard"/>
+                    android:src="@drawable/ic_class"/>
 
-                <ImageView
-                    android:id="@+id/row_class_downloading_anim"
-                    android:layout_width="14dp"
-                    android:layout_height="14dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="1dp"
-                    android:background="@drawable/ic_dashboard"
-                    android:visibility="gone"/>
-
-                <ImageView
-                    android:id="@+id/row_class_download_status"
-                    android:layout_width="14dp"
-                    android:layout_height="14dp"
-                    android:layout_alignParentRight="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_marginTop="1dp"
-                    android:visibility="gone"/>
             </RelativeLayout>
 
             <LinearLayout
@@ -89,7 +72,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:text="sasas"
+                        android:text="我的进度"
                         />
 
                     <TextView
@@ -97,7 +80,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        android:text="52.3%"
+                        android:text="50.0%"
                         />
 
                     <ProgressBar
@@ -105,6 +88,7 @@
                         style="?android:attr/progressBarStyleHorizontal"
                         android:layout_width="fill_parent"
                         android:layout_height="4dp"
+                        android:progress="50"
                         android:layout_below="@+id/myclass_classmateprogress_text"
                         android:layout_marginTop="4dp"
                         />
@@ -121,7 +105,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentLeft="true"
-                        android:text="sasa"
+                        android:text="大家的进度"
                         />
 
                     <TextView
@@ -129,7 +113,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_alignParentRight="true"
-                        android:text="0.0%"
+                        android:text="80.0%"
                         />
 
                     <ProgressBar
@@ -137,6 +121,7 @@
                         style="?android:attr/progressBarStyleHorizontal"
                         android:layout_width="fill_parent"
                         android:layout_height="4dp"
+                        android:progress="80"
                         android:layout_below="@+id/myclass_myprogress_text"
                         android:layout_marginTop="4dp"
                         />

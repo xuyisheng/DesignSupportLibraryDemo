@@ -1,13 +1,12 @@
 package com.hujiang.designsupportlibrarydemo;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.NavigationView;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TabLayout;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
-import android.support.v4.view.PagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
@@ -16,8 +15,6 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -27,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
     private DrawerLayout mDrawerLayout;
     private ViewPager mViewPager;
+    private TabLayout mTabLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,16 +59,12 @@ public class MainActivity extends AppCompatActivity {
                                         Toast.LENGTH_SHORT).show();
                             }
                         }).show();
-
-                // TODO
-                startActivity(new Intent(MainActivity.this, DetailActivity.class));
             }
         });
 
         mViewPager = (ViewPager) findViewById(R.id.viewpager);
         setupViewPager();
-        TabLayout tabLayout = (TabLayout) findViewById(R.id.tabs);
-        tabLayout.setupWithViewPager(mViewPager);
+
     }
 
     @Override
@@ -90,50 +84,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void setupViewPager() {
-        TextView view1 = new TextView(this);
-        view1.setText("I am pager1");
-        TextView view2 = new TextView(this);
-        view2.setText("I am pager2");
-        TextView view3 = new TextView(this);
-        view3.setText("I am pager3");
-        final List<View> viewList = new ArrayList<>();
-        viewList.add(view1);
-        viewList.add(view2);
-        viewList.add(view3);
-        final List<String> titleList = new ArrayList<>();
-        titleList.add("Pager1");
-        titleList.add("Pager2");
-        titleList.add("Pager3");
-
-        mViewPager.setAdapter(new PagerAdapter() {
-
-            @Override
-            public Object instantiateItem(ViewGroup container, int position) {
-                View view = viewList.get(position);
-                container.addView(view);
-                return view;
-            }
-
-            @Override
-            public void destroyItem(ViewGroup container, int position, Object object) {
-                container.removeView(viewList.get(position));
-            }
-
-            @Override
-            public int getCount() {
-                return viewList.size();
-            }
-
-            @Override
-            public boolean isViewFromObject(View view, Object o) {
-                return view == o;
-            }
-
-            @Override
-            public CharSequence getPageTitle(int position) {
-                return titleList.get(position);
-            }
-        });
+        mTabLayout = (TabLayout) findViewById(R.id.tabs);
+        List<String> titles = new ArrayList<>();
+        titles.add("Page One");
+        titles.add("Page Two");
+        titles.add("Page Three");
+        mTabLayout.addTab(mTabLayout.newTab().setText(titles.get(0)));
+        mTabLayout.addTab(mTabLayout.newTab().setText(titles.get(1)));
+        mTabLayout.addTab(mTabLayout.newTab().setText(titles.get(2)));
+        List<Fragment> fragments = new ArrayList<>();
+        fragments.add(new ListFragment());
+        fragments.add(new ListFragment());
+        fragments.add(new ListFragment());
+        FragmentAdapter adapter =
+                new FragmentAdapter(getSupportFragmentManager(), fragments, titles);
+        mViewPager.setAdapter(adapter);
+        mTabLayout.setupWithViewPager(mViewPager);
+        mTabLayout.setTabsFromPagerAdapter(adapter);
     }
 
     private void setupDrawerContent(NavigationView navigationView) {

@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:fitsSystemWindows="true">
 
+    <!-- 你的内容布局-->
     <include layout="@layout/navigation_content"/>
 
     <android.support.design.widget.NavigationView

@@ -55,21 +55,22 @@
             android:orientation="vertical"
             android:paddingTop="24dp">
 
-            <include layout="@layout/list_item_card"/>
+            <include layout="@layout/list_item_card_detail"/>
 
-            <include layout="@layout/list_item_card"/>
+            <include layout="@layout/list_item_card_detail"/>
 
-            <include layout="@layout/list_item_card"/>
+            <include layout="@layout/list_item_card_detail"/>
 
-            <include layout="@layout/list_item_card"/>
+            <include layout="@layout/list_item_card_detail"/>
 
-            <include layout="@layout/list_item_card"/>
+            <include layout="@layout/list_item_card_detail"/>
 
         </LinearLayout>
 
     </android.support.v4.widget.NestedScrollView>
 
     <android.support.design.widget.FloatingActionButton
+        android:onClick="checkin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/fab_margin"

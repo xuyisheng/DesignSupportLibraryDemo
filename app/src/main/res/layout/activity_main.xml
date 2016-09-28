@@ -1,20 +1,28 @@
-<android.support.v4.widget.DrawerLayout
-    android:id="@+id/dl_main_drawer"
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#0fb73d"
     android:fitsSystemWindows="true">
 
-    <!-- 你的内容布局-->
-    <include layout="@layout/navigation_content"/>
-
-    <android.support.design.widget.NavigationView
-        android:id="@+id/nv_main_navigation"
-        android:layout_width="wrap_content"
+    <android.support.v4.widget.DrawerLayout
+        android:id="@+id/dl_main_drawer"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:headerLayout="@layout/navigation_header"
-        app:menu="@menu/drawer_view"/>
+        android:background="@color/window_background">
 
-</android.support.v4.widget.DrawerLayout>
+        <!-- 你的内容布局-->
+        <include layout="@layout/navigation_content"/>
+
+        <android.support.design.widget.NavigationView
+            android:id="@+id/nv_main_navigation"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            app:headerLayout="@layout/navigation_header"
+            app:menu="@menu/drawer_view"/>
+
+    </android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

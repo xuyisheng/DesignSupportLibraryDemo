@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_dashboard"
+            android:title="CC Talk"/>
+        <item
+            android:id="@+id/nav_messages"
+            android:icon="@drawable/ic_event"
+            android:title="HJ Class"/>
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@drawable/ic_headset"
+            android:title="Words"/>
+        <item
+            android:id="@+id/nav_discussion"
+            android:icon="@drawable/ic_forum"
+            android:title="Big HJ"/>
+    </group>
+
+    <item android:title="Version">
+        <menu>
+            <item
+                android:icon="@drawable/ic_dashboard"
+                android:title="Android"/>
+            <item
+                android:icon="@drawable/ic_dashboard"
+                android:title="iOS"/>
+        </menu>
+    </item>
+
+</menu>

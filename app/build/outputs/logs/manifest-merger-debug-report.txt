@@ -1,0 +1,78 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml:2:1-24:12
+	package
+		ADDED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml:3:5-51
+		INJECTED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml:4:5-63
+	android:versionCode
+		INJECTED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml
+application
+ADDED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml:6:5-22:19
+MERGED from [com.android.support:design:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:appcompat-v7:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-vector-drawable:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/AndroidManifest.xml:23:5-20
+MERGED from [com.android.support:support-compat:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:animated-vector-drawable:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.0/AndroidManifest.xml:22:5-20
+MERGED from [com.android.support:support-v4:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-utils:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-media-compat:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-core-ui:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:support-fragment:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/AndroidManifest.xml:25:5-20
+MERGED from [com.android.support:cardview-v7:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.2.0/AndroidManifest.xml:22:5-20
+	android:label
+		ADDED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml:9:9-41
+	android:allowBackup
+		ADDED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml:7:9-35
+	android:icon
+		ADDED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml:8:9-43
+	android:theme
+		ADDED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml:10:9-48
+activity#com.hujiang.designsupportlibrarydemo.MainActivity
+ADDED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml:11:9-19:20
+	android:label
+		ADDED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml:13:13-45
+	android:name
+		ADDED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml:12:13-41
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml:14:13-18:29
+action#android.intent.action.MAIN
+ADDED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml:15:17-68
+	android:name
+		ADDED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml:15:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml:17:17-76
+	android:name
+		ADDED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml:17:27-74
+activity#com.hujiang.designsupportlibrarydemo.DetailActivity
+ADDED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml:21:9-51
+	android:name
+		ADDED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml:21:19-49
+uses-sdk
+INJECTED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support:design:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/design/24.2.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:appcompat-v7:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:support-vector-drawable:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.0/AndroidManifest.xml:21:5-43
+MERGED from [com.android.support:support-compat:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:animated-vector-drawable:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.0/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-core-utils:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.0/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-media-compat:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.0/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-core-ui:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.0/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-fragment:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.0/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:recyclerview-v7:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.0/AndroidManifest.xml:20:5-43
+MERGED from [com.android.support:cardview-v7:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/24.2.0/AndroidManifest.xml:20:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:appcompat-v7:24.2.0] /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.0/AndroidManifest.xml:23:9-75
+	android:targetSdkVersion
+		INJECTED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/lshare/Documents/android_project/DesignSupportLibraryDemo/app/src/main/AndroidManifest.xml
